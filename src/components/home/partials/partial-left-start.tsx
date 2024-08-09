@@ -20,7 +20,7 @@ const PartialLeftStart = () => {
                 <span className='text-4xl tracking-widest font-bold text-default'>PUBLIC JSON</span>
             </h1>
 
-            <p className='tracking-widest'>API falsa e confiável gratuita para testes e prototipagem.</p>
+            <p className='tracking-widest text-gray-600 font-semibold'>API falsa e confiável gratuita para testes e prototipagem.</p>
             <p className='flex items-center justify-between gap-2 bg-bgCode max-w-96 text-white p-2 px-3 rounded-sm' >
                 <code ref={textRef} className='text-xs'>npm install public-json</code>
                 {isPending ?

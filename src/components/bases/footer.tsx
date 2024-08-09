@@ -4,7 +4,7 @@ const Footer = () => {
     const currentYear = new Date().getFullYear()
   return (
     <footer className='flex items-center justify-center p-8 max-w-96 m-auto'>
-        <p className='text-center text-xs'>Codificado e mantido pela Web.AO &copy; {currentYear} </p>
+        <p className='text-center text-xs tracking-widest'>Codificado e mantido pela Web.AO &copy; {currentYear} </p>
     </footer>
   )
 }

@@ -68,7 +68,7 @@
   }
 
   main{
-    @apply max-w-5xl m-auto flex flex-col gap-16 my-8 px-10
+    @apply max-w-5xl m-auto flex flex-col gap-16 my-8 px-10 min-h-[80vh]
   }
 }
 

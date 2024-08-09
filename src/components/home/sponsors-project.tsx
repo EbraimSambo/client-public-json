@@ -9,7 +9,7 @@ const SponsorsProject = () => {
         <ul className='flex items-center gap-11'>
             {sponsors.map((sponsor,index)=>(
                 <li key={index} className='flex items-center gap-2'>
-                    <div className='relative h-52 w-52'>
+                    <div className='relative h-52 max-w-52'>
                         <Image src={sponsor.img} fill alt={sponsor.sponsor} priority />
                     </div>
                 </li>

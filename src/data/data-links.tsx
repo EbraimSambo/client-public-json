@@ -10,6 +10,10 @@ export const linksNavBar=[
     {
         title: "Docs",
         path:"/docs"
+    },
+    {
+        title: "Chave de API",
+        path:"/generateApi"
     }
 ]
 
