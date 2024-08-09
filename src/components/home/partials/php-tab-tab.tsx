@@ -13,7 +13,7 @@ const PHPTab = () => {
                     <span className='text-blue-500'>{phpTagStart}?php</span>
                     <span className='ml-4'>
                         <span className='text-blue-300'>$url</span> =
-                        <span className='text-amber-800'>&quot;{"https://public-json.com/api/users"}&ldquo;</span>
+                        <span className='text-amber-800'>&quot;{"https://server-public-json.onrender.com/users"}&quot;</span>
                     </span>
                     <span className='ml-4'>
                         <span className='text-blue-300'>$apiKey</span> =

@@ -2,5 +2,5 @@ import axios from "axios";
 
 
 export const configInstance = axios.create({
-    baseURL: "http://localhost:7000/",
+    baseURL: "https://server-public-json.onrender.com/",
 })
