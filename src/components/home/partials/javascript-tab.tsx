@@ -13,8 +13,8 @@ const JavascriptTab = () => {
                         <span className='text-blue-400'> users </span>=
                         <span className='text-pink-500'> await</span>
                         <span className='text-yellow-500'> fetch</span>
-                        <span className='text-pink-500'>(</span>
-                        <span className='text-amber-800'>"https://public-json.com/api/users"</span>,
+                        <span className='text-pink-500'>{"("}</span>
+                        <span className='text-amber-800'>&quot;{"https://public-json.com/api/users"}&ldquo;</span>,
                         <span className='text-yellow-500'> {ap}</span> </div>
                     <span className='pl-6'>
                         <span className='text-blue-300'> header: </span>
@@ -22,22 +22,22 @@ const JavascriptTab = () => {
                     <div className='flex flex-col'>
                         <span className='pl-12'>
                             <span className='text-blue-300'>method:</span>
-                            <span className='text-amber-800'> "GET"</span>, </span>
+                            <span className='text-amber-800'> &quot;GET&ldquo;</span>, </span>
                         <span className='pl-12'>
                             <span className='text-blue-300'>authorization:</span>
-                            <span className='text-amber-800'> "{"Bearer {key-api}"}"</span>,
+                            <span className='text-amber-800'> &quot;{"Bearer {key-api}"}&ldquo;</span>,
                         </span>
                     </div>
                     <span className='pl-6 text-yellow-500'>{at}</span>
                     <span>
                         <span className='text-yellow-500'>{at}</span>
-                        <span className='text-pink-500'>)</span>; </span>
+                        <span className='text-pink-500'>{")"}</span>; </span>
                     <span>
                         <span className='text-blue-300'>console</span>.
                         <span className='text-yellow-200'>log</span>
-                        <span className='text-pink-500'>(</span>
+                        <span className='text-pink-500'>{"("}</span>
                         <span className='text-blue-400'>users</span>
-                        <span className='text-pink-500'>)</span>;
+                        <span className='text-pink-500'>{")"}</span>;
                     </span>
                 </code>
             </p>
