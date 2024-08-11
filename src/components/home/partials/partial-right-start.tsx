@@ -9,7 +9,7 @@ import javascriptIcon from  '@/components/assets/javascript-original.svg'
 const PartialRightStart = () => {
 
     return (
-        <Tabs >
+        <Tabs defaultValue="javascript">
             <h2 className='text-gray-700 font-semibold'>Exemplo de como implementar</h2>
             <TabsList className="grid w-full grid-cols-2 mt-2">
                 <TabsTrigger value="javascript" className='flex items-center gap-1 '>
