@@ -1,4 +1,3 @@
-"use client"
 import React from 'react'
 import { Toaster } from '../ui/toaster'
 import PartialLeftStart from './partials/partial-left-start'

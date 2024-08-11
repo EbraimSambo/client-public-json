@@ -1,9 +1,11 @@
+import { Loader as LoadIcon } from 'lucide-react'
 import React from 'react'
 
-const Loader = () => {
+const Loader = ({isPadding}:{isPadding: boolean}) => {
+  if(!isPadding) return null
   return (
     <div className='flex items-center justify-center'>
-        <div className='h-5 w-5 border-default '></div>
+      <LoadIcon className='animate-spin' />
     </div>
   )
 }

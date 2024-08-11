@@ -9,19 +9,19 @@ import {
     AlertDialogTitle,
 } from "@/components/ui/alert-dialog"
 
-interface Props{
+interface Props {
     keyApi: string
 }
-const MessageSuccess: FC<Props> = ({keyApi}) => {
+const MessageSuccess: FC<Props> = ({ keyApi }) => {
     return (
         <AlertDialogContent >
             <AlertDialogHeader>
                 <AlertDialogTitle>Sua chave de Api</AlertDialogTitle>
+            </AlertDialogHeader>
+            <AlertDialogFooter className='flex items-center gap-4'>
                 <AlertDialogDescription className='w-full'>
                     <code className='p-2 w-full rounded-md bg-slate-300'> {keyApi} </code>
                 </AlertDialogDescription>
-            </AlertDialogHeader>
-            <AlertDialogFooter>
                 <AlertDialogAction>Copiar</AlertDialogAction>
             </AlertDialogFooter>
         </AlertDialogContent>

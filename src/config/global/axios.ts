@@ -1,6 +1,9 @@
 import axios from "axios";
+import { urlServer } from "../constants";
+
 
 
 export const configInstance = axios.create({
-    baseURL: "https://server-public-json.onrender.com/",
+    baseURL: urlServer,
+    timeout: 4000,
 })

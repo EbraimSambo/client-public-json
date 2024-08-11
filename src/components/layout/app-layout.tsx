@@ -1,13 +1,17 @@
+"use client"
 import React, { FC, ReactNode } from 'react'
 import NavBar from '../bases/nav-bar'
 import Footer from '../bases/footer'
+import { useAtom, useStore } from 'jotai'
+import { darkMode} from '@/hooks/atoms/theme'
 
 interface App {
   children: ReactNode
 }
 const AppLayout: FC<App> = ({ children }) => {
+  const [isDark, setDarkMode] = useAtom(darkMode)
   return (
-    <div>
+    <div className={isDark? 'bg-black text-white':'bg-white'}>
       <NavBar />
       <main>{children}</main>
       <Footer />

@@ -17,7 +17,7 @@ const PHPTab = () => {
                     </span>
                     <span className='ml-4'>
                         <span className='text-blue-300'>$apiKey</span> =
-                        <span className='text-amber-800'> &quot;{"323-32-32-doi32-2323"}&ldquo;</span>
+                        <span className='text-amber-800'> &quot;{"323-32-32-doi32-2323"}&quot;</span>
                     </span>
                     <span className='ml-4'>
                         <span className='text-blue-300'>$ch</span> =

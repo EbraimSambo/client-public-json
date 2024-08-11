@@ -1,10 +1,12 @@
 "use client"
 import React from 'react'
 import { Button } from '../ui/button'
-import { KeyIcon, Loader } from 'lucide-react'
+import { KeyIcon} from 'lucide-react'
 import { useGenerateKeyApi } from '@/hooks/use-generate-key-api'
 import { AlertDialog, AlertDialogTrigger } from '../ui/alert-dialog'
 import MessageSuccess from './partials/MessageSuccess'
+import AlertMessage from './partials/AlertMessage'
+import Loader from '../bases/loader'
 
 const GenerateApi = () => {
   const { 
@@ -12,16 +14,15 @@ const GenerateApi = () => {
      handleSubmit,
       isPadding,
       response,
-      success
+      success,
+      errorMessage
      } = useGenerateKeyApi()
   return (
     <AlertDialog>
       <div className='flex items-center justify-center h-96 text-center'>
         <form onSubmit={handleSubmit(sendData)} className='flex flex-col gap-4 p-4 shadow-2xl'>
-          {isPadding &&
-            <div className='flex items-center justify-center'>
-              <Loader className='animate-spin' />
-            </div>}
+            <Loader isPadding={isPadding} />
+            <AlertMessage error={errorMessage.error} message={errorMessage.message}  />
           <h2>Gerar Chave para consumir api</h2>
           <p><b>Nota:</b> Esta chave de api, tem duração de 3 meses</p>
           <AlertDialogTrigger asChild>
