@@ -1,6 +1,6 @@
 "use client"
 import { Button } from '@/components/ui/button'
-import { changeTheme, darkMode, isDarkTheme } from '@/hooks/atoms/theme'
+import { darkMode, } from '@/hooks/atoms/theme'
 import { useAtom } from 'jotai'
 import { MoonIcon, SunIcon } from 'lucide-react'
 import React from 'react'

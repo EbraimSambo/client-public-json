@@ -7,6 +7,7 @@ import { darkMode} from '@/hooks/atoms/theme'
 
 interface App {
   children: ReactNode
+  
 }
 const AppLayout: FC<App> = ({ children }) => {
   const [isDark, setDarkMode] = useAtom(darkMode)
