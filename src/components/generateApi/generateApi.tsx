@@ -22,7 +22,7 @@ const GenerateApi = () => {
       <div className='flex items-center justify-center h-96 text-center'>
         <form onSubmit={handleSubmit(sendData)} className='flex flex-col gap-4 p-4 shadow-2xl'>
             <Loader isPadding={isPadding} />
-            <AlertMessage error={errorMessage.error} message={errorMessage.message}  />
+            <AlertMessage error={errorMessage?.error!} message={errorMessage?.message}  />
           <h2>Gerar Chave para consumir api</h2>
           <p><b>Nota:</b> Esta chave de api, tem duração de 3 meses</p>
           <AlertDialogTrigger asChild>

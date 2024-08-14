@@ -14,7 +14,7 @@ const JavascriptTab = () => {
                         <span className='text-pink-500'> await</span>
                         <span className='text-yellow-500'> fetch</span>
                         <span className='text-pink-500'>{"("}</span>
-                        <span className='text-amber-800'>&quot;{"https://public-json.com/api/users"}&ldquo;</span>,
+                        <span className='text-colorCode-string'>&quot;{"https://public-json.com/api/users"}&quot;</span>,
                         <span className='text-yellow-500'> {ap}</span> </div>
                     <span className='pl-6'>
                         <span className='text-blue-300'> header: </span>
@@ -22,10 +22,10 @@ const JavascriptTab = () => {
                     <div className='flex flex-col'>
                         <span className='pl-12'>
                             <span className='text-blue-300'>method:</span>
-                            <span className='text-amber-800'> &quot;GET&ldquo;</span>, </span>
+                            <span className='text-colorCode-string'> &quot;GET&ldquo;</span>, </span>
                         <span className='pl-12'>
                             <span className='text-blue-300'>authorization:</span>
-                            <span className='text-amber-800'> &quot;{"Bearer {key-api}"}&ldquo;</span>,
+                            <span className='text-colorCode-string'> &quot;{"Bearer {key-api}"}&quot;</span>,
                         </span>
                     </div>
                     <span className='pl-6 text-yellow-500'>{at}</span>

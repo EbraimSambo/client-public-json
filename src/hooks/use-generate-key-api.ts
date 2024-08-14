@@ -1,4 +1,5 @@
 import { configInstance } from "@/config/global/axios";
+import { IErrorMessage } from "@/interfaces";
 import { useState, useTransition } from "react";
 import { useForm } from "react-hook-form";
 
@@ -14,10 +15,7 @@ export function useGenerateKeyApi() {
     })
 
     const [success, setSuccess] = useState(false)
-    const [errorMessage, setErrorMessage] = useState({
-        error: false,
-        message: ""
-    })
+    const [errorMessage, setErrorMessage] = useState<IErrorMessage>()
 
     async function sendData() {
         setErrorMessage({
@@ -28,9 +26,6 @@ export function useGenerateKeyApi() {
         startTransition(true)
         configInstance.postForm('api/create')
             .then((res) => {
-                console.log(res.data)
-                const dateExpiration = new Date(res.data.expiration).toDateString()
-                console.log(dateExpiration)
                 setResponse({
                     keyApi: res.data.apiKey,
                     expiration: Number(res.data.expiration)
@@ -58,12 +53,6 @@ export function useGenerateKeyApi() {
                     error: true,
                     message: "Alguma coisa ocorreu com a sua conexão, tente maís tarde!"
                 })
-
-                if (error?.code == "ERR_NETWORK") return setErrorMessage({
-                    error: true,
-                    message: "Alguma coisa ocorreu com a sua conexão, tente maís tarde!"
-                })
-
 
             }).finally(() => {
                 startTransition(false)

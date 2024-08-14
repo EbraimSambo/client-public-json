@@ -59,3 +59,43 @@ export const sponsors =[
         img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/netlify/netlify-original-wordmark.svg"
     }
 ]
+
+
+export const thousands =[
+    {
+        name: "Ebraim Sambo",
+        job: "Developer Frontend",
+        argument: "O melhor desenvolvedor frontend do Brasil",
+        urlImage: "https://avatars.githubusercontent.com/u/107747841?v=4"
+    },
+    {
+        name: "Afonso Nzongo",
+        job: "Developer Backend",
+        argument: "O melhor desenvolvedor backend do Brasil",
+        urlImage: "https://avatars.githubusercontent.com/u/107747841?v=4",
+    },
+    {
+        name: "Eduardo Almeida",
+        job: "Developer Backend",
+        argument: "O melhor desenvolvedor backend do Brasil",
+        urlImage: "https://avatars.githubusercontent.com/u/107747841?v=4"
+    },
+    {
+        name: "Ebraim Sambo",
+        job: "Developer Frontend",
+        argument: "O melhor desenvolvedor frontend do Brasil",
+        urlImage: "https://avatars.githubusercontent.com/u/107747841?v=4"
+    },
+    {
+        name: "Afonso Nzongo",
+        job: "Developer Backend",
+        argument: "O melhor desenvolvedor backend do Brasil",
+        urlImage: "https://avatars.githubusercontent.com/u/107747841?v=4",
+    },
+    {
+        name: "Eduardo Almeida",
+        job: "Developer Backend",
+        argument: "O melhor desenvolvedor backend do Brasil",
+        urlImage: "https://avatars.githubusercontent.com/u/107747841?v=4"
+    }
+]

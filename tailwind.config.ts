@@ -27,6 +27,9 @@ const config = {
         foreground: "hsl(var(--foreground))",
         default: "#0056FD",
         bgCode: "#18181B",
+        colorCode:{
+          string: "#C68B73"
+        },
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",

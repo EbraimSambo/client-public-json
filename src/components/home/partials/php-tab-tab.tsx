@@ -13,11 +13,11 @@ const PHPTab = () => {
                     <span className='text-blue-500'>{phpTagStart}?php</span>
                     <span className='ml-4'>
                         <span className='text-blue-300'>$url</span> =
-                        <span className='text-amber-800'>&quot;{"https://server-public-json.onrender.com/users"}&quot;</span>
+                        <span className='text-colorCode-string'>&quot;{"https://server-public-json.onrender.com/users"}&quot;</span>
                     </span>
                     <span className='ml-4'>
                         <span className='text-blue-300'>$apiKey</span> =
-                        <span className='text-amber-800'> &quot;{"323-32-32-doi32-2323"}&quot;</span>
+                        <span className='text-colorCode-string'> &quot;{"323-32-32-doi32-2323"}&quot;</span>
                     </span>
                     <span className='ml-4'>
                         <span className='text-blue-300'>$ch</span> =
@@ -44,9 +44,9 @@ const PHPTab = () => {
                         <span className='text-blue-500'> {"["} </span>
                     </span>
                     <span className='ml-12'>
-                        <span className='text-amber-800'> &quot;{"Authorization: Bearer"} </span>
+                        <span className='text-colorCode-string'> &quot;{"Authorization: Bearer"} </span>
                         <span className='text-blue-300'>$apiKey</span>
-                        <span className='text-amber-800'>&quot; </span>
+                        <span className='text-colorCode-string'>&quot; </span>
                     </span>
                     <span className='ml-4'>
                         <span className='text-pink-500'>{"]"}</span>
@@ -108,9 +108,9 @@ const PHPTab = () => {
                     <span className='ml-12'>
                         <span className='text-yellow-200'>echo</span>
                         <span> = </span>
-                        <span className='text-amber-800'> &quot;{"Error Request:"} </span>
+                        <span className='text-colorCode-string'> &quot;{"Error Request:"} </span>
                         <span className='text-blue-300'> $httpcode</span>
-                        <span className='text-amber-800'> &ldquo; </span>
+                        <span className='text-colorCode-string'>&quot; </span>
                     </span>
                     <span className='text-yellow-500 ml-4'> {"}"} </span>
                     <span className='text-blue-500'>?{phpTagEnd}</span>
