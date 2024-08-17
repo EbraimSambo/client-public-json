@@ -12,7 +12,6 @@ import Typography from '@/components/bases/typography'
 
 const PartialLeftStart = () => {
     const { handleClick, textRef, isPending } = useCopyText()
-    const { toast } = useToast()
     return (
         <div className='flex gap-8 flex-col'>
             <Typography

@@ -1,3 +1,6 @@
+import { CameraIcon, ComputerIcon, Disc3, icons, NewspaperIcon, ShoppingCart, User2Icon } from "lucide-react"
+import { PiBowlSteamBold } from "react-icons/pi"
+
 export const linksNavBar=[
     {
         title: "Home",
@@ -21,29 +24,35 @@ export const linksNavBar=[
 
 export const resourcesApi =[
     {
-        title: "/posts",
-        path:"/"
+        title: "posts",
+        path:"/",
+        icon: <NewspaperIcon />
     },
     {
-        title: "/user",
-        path:"/guides"
+        title: "users",
+        path:"/guides",
+        icon: <User2Icon />
     },
     {
-        title: "/products",
-        path:"/docs"
+        title: "products",
+        path:"/docs",
+        icon: <ShoppingCart />
     },
     {
-        title: "/tech",
-        path:"/docs"
+        title: "techs",
+        path:"/docs",
+        icon: <ComputerIcon/>
     },
     {
-        title: "/movies",
-        path:"/docs"
+        title: "images",
+        path:"/docs",
+        icon: <CameraIcon />
     }
     ,
     {
-        title: "/tracks",
-        path:"/docs"
+        title: "tracks",
+        path:"/docs",
+        icon: <Disc3 />
     }
 ]
 
@@ -64,38 +73,38 @@ export const sponsors =[
 export const thousands =[
     {
         name: "Ebraim Sambo",
-        job: "Developer Frontend",
-        argument: "O melhor desenvolvedor frontend do Brasil",
+        job: "Developer Fullstack",
+        argument: "O PUBLIC JSON torna facil o apredizado de consulta ou leitura de APIS REST",
         urlImage: "https://avatars.githubusercontent.com/u/107747841?v=4"
     },
     {
         name: "Afonso Nzongo",
         job: "Developer Backend",
-        argument: "O melhor desenvolvedor backend do Brasil",
+        argument: "Apenas se torna facil de imaginar qualquer site ou template quando há dados disponiveis",
         urlImage: "https://avatars.githubusercontent.com/u/107747841?v=4",
     },
     {
         name: "Eduardo Almeida",
-        job: "Developer Backend",
-        argument: "O melhor desenvolvedor backend do Brasil",
-        urlImage: "https://avatars.githubusercontent.com/u/107747841?v=4"
-    },
-    {
-        name: "Ebraim Sambo",
         job: "Developer Frontend",
-        argument: "O melhor desenvolvedor frontend do Brasil",
+        argument: "O Public JSON facilita na construção de um site quando não há dados disponiveis ",
         urlImage: "https://avatars.githubusercontent.com/u/107747841?v=4"
     },
     {
-        name: "Afonso Nzongo",
-        job: "Developer Backend",
-        argument: "O melhor desenvolvedor backend do Brasil",
+        name: "Jorge Swgger",
+        job: "Developer Frontend",
+        argument: "Imagina criar um site sem dados disponiveis para estilizar? seria complicado!",
+        urlImage: "https://avatars.githubusercontent.com/u/107747841?v=4"
+    },
+    {
+        name: "Bill Roger",
+        job: "Developer Fullstack",
+        argument: "Não existe frontend que não saiba consumir uma api, para criar a demo de um site",
         urlImage: "https://avatars.githubusercontent.com/u/107747841?v=4",
     },
     {
-        name: "Eduardo Almeida",
+        name: "John Slow",
         job: "Developer Backend",
-        argument: "O melhor desenvolvedor backend do Brasil",
+        argument: "Sites de streaming ou lojas online com images, audios e vídeos esses dados estão aqui!",
         urlImage: "https://avatars.githubusercontent.com/u/107747841?v=4"
     }
 ]

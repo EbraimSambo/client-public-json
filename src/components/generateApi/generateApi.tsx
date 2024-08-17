@@ -20,7 +20,7 @@ const GenerateApi = () => {
   return (
     <AlertDialog>
       <div className='flex items-center justify-center h-96 text-center'>
-        <form onSubmit={handleSubmit(sendData)} className='flex flex-col gap-4 p-4 shadow-2xl'>
+        <form onSubmit={handleSubmit(sendData)} className='border rounded-sm flex flex-col gap-4 p-4 shadow-2xl'>
             <Loader isPadding={isPadding} />
             <AlertMessage error={errorMessage?.error!} message={errorMessage?.message}  />
           <h2>Gerar Chave para consumir api</h2>

@@ -2,8 +2,8 @@ import React from 'react'
 
 const JsonIlustration = () => {
     return (
-        <div>
-            <code className='flex flex-col gap-3 pl-10 bg-bgCode w-full text-white p-8 rounded-sm shadow-sm mt-4'>
+        <div >
+            <code className='flex flex-col gap-3 pl-10 bg-bgCode w-full text-white p-8 rounded-sm shadow-sm mt-4 '>
                 <span className='text-yellow-500'> {"{"} </span>
                 <div className='pl-5 flex flex-col gap-1'>
                     <span>

@@ -7,7 +7,7 @@ interface TextProps {
   text: ReactNode,
   color?: "text-default" | "text-gray-800" | "text-black" | "text-gray-600" | "text-white" | "error" | "info",
   element: "p" | "h1" | "h2" | "h3" | "h4" | "h5" | "h6"| "span"| "b"| "i",
-  size?: "text-sm" | "text-3xl" | "text-4xl"| "text-5xl" | "text-6xl"
+  size?: "text-xs"| "text-sm" | "text-2xl"| "text-3xl" | "text-4xl"| "text-5xl" | "text-6xl"
   bold?: "font-bold"|"font-semibold",
   className?: string
 }
