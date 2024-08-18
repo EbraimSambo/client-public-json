@@ -81,30 +81,30 @@ export const thousands =[
         name: "Afonso Nzongo",
         job: "Developer Backend",
         argument: "Apenas se torna facil de imaginar qualquer site ou template quando há dados disponiveis",
-        urlImage: "https://avatars.githubusercontent.com/u/107747841?v=4",
+        urlImage: "https://avatars.githubusercontent.com/u/51960834?s=200&v=4",
     },
     {
         name: "Eduardo Almeida",
         job: "Developer Frontend",
         argument: "O Public JSON facilita na construção de um site quando não há dados disponiveis ",
-        urlImage: "https://avatars.githubusercontent.com/u/107747841?v=4"
+        urlImage: "https://avatars.githubusercontent.com/u/4627922?v=4"
     },
     {
         name: "Jorge Swgger",
         job: "Developer Frontend",
         argument: "Imagina criar um site sem dados disponiveis para estilizar? seria complicado!",
-        urlImage: "https://avatars.githubusercontent.com/u/107747841?v=4"
+        urlImage: "https://avatars.githubusercontent.com/u/57466994?v=4"
     },
     {
         name: "Bill Roger",
         job: "Developer Fullstack",
         argument: "Não existe frontend que não saiba consumir uma api, para criar a demo de um site",
-        urlImage: "https://avatars.githubusercontent.com/u/107747841?v=4",
+        urlImage: "https://avatars.githubusercontent.com/u/81087997?v=4",
     },
     {
         name: "John Slow",
         job: "Developer Backend",
         argument: "Sites de streaming ou lojas online com images, audios e vídeos esses dados estão aqui!",
-        urlImage: "https://avatars.githubusercontent.com/u/107747841?v=4"
+        urlImage: "https://avatars.githubusercontent.com/u/51469?v=4"
     }
 ]

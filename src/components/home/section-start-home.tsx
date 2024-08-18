@@ -7,7 +7,7 @@ const SectionStartHome = () => {
     return (
         <section className='grid grid-cols-2 gap-4 max-[920px]:grid-cols-1'>
             <PartialLeftStart />
-            <PartialRightStart />
+             <PartialRightStart />
             <Toaster />
         </section>
     )

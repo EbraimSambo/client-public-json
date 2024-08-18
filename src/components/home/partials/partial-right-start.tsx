@@ -20,13 +20,13 @@ const PartialRightStart = () => {
                 color='text-gray-600'
             />
             <TabsList className="grid w-full grid-cols-2 gap-2 mt-2">
-                <TabsTrigger value="javascript" className={`flex items-center gap-1 ${isDark && ' text-black border border-black data-[state=active]:text-white data-[state=active]:bg-black'} `}>
+                <TabsTrigger value="javascript" className={`flex items-center gap-1 ${isDark && ' text-black border border-black data-[state=active]:text-white data-[state=active]:bg-colorCode-bgCode'} `}>
                     <div className='relative h-5 w-5' >
                         <Image src={javascriptIcon} fill alt='php' />
                     </div>
                     <span>Javascript</span>
                 </TabsTrigger>
-                <TabsTrigger value="php" className={`flex items-center gap-1 ${isDark && 'text-black border border-black data-[state=active]:text-white data-[state=active]:bg-black'} `}>
+                <TabsTrigger value="php" className={`flex items-center gap-1 ${isDark && 'text-black border border-black data-[state=active]:text-white data-[state=active]:bg-colorCode-bgCode'} `}>
                     <div className='relative h-5 w-5'>
                         <Image src={phpIcon} fill alt='php' />
                     </div>

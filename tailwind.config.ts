@@ -28,7 +28,8 @@ const config = {
         default: "#0056FD",
         bgCode: "#18181B",
         colorCode:{
-          string: "#C68B73"
+          string: "#C68B73",
+          bgCode: "#1B1B1F"
         },
         primary: {
           DEFAULT: "hsl(var(--primary))",

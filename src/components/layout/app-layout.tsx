@@ -12,7 +12,7 @@ interface App {
 const AppLayout: FC<App> = ({ children }) => {
   const [isDark, setDarkMode] = useAtom(darkMode)
   return (
-    <div className={isDark? 'bg-black text-white':'bg-white'}>
+    <div className={isDark? 'bg-colorCode-bgCode text-white':'bg-white'}>
       <NavBar />
       <main>{children}</main>
       <Footer />
