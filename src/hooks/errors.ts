@@ -1,4 +1,4 @@
-// eslint-disable-next-line react-hooks/rules-of-hooks
+/* eslint-disable react-hooks/rules-of-hooks */
 
 import { IErrorMessage } from "@/interfaces";
 import { useState } from "react";
@@ -7,7 +7,6 @@ import { useState } from "react";
 
 
 export function userError() {
-    // eslint-disable-next-line react-hooks/rules-of-hooks
     const [errorMessage, setErrorMessage] = useState<IErrorMessage>({
         error: false,
         message: ""
