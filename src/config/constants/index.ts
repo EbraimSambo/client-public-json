@@ -6,4 +6,4 @@ const prefixLocalServer = "http://localhost:7000"
 
 const prefixProductionServer = "https://server-public-json.onrender.com/"
 
-export const urlServer = prefixLocalServer
+export const urlServer = prefixProductionServer

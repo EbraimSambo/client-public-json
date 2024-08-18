@@ -14,7 +14,7 @@ export function useGenerateKeyApi() {
 
     const [success, setSuccess] = useState(false)
 
-    const { errorMessage, setErrorMessage } = userError()
+    const { errorMessage, setErrorMessage, handleError } = userError()
 
     async function sendData() {
         setErrorMessage({
@@ -23,45 +23,24 @@ export function useGenerateKeyApi() {
         })
         setSuccess(false)
         startTransition(true)
-        configInstance.postForm('api/create')
-            .then((res) => {
+        try {
+            const response = await configInstance.postForm('api/create')
+            if (response?.data && response?.data.apiKey && response?.data.expiration) {
                 setResponse({
-                    keyApi: res.data.apiKey,
-                    expiration: Number(res.data.expiration)
-                })
-                setSuccess(true)
-            })
-            .catch((error) => {
-                console.log(error)
-                if (error?.request?.status == 0) {
-                    console.log("aqui 1")
+                    keyApi: response.data.apiKey,
+                    expiration: Number(response.data.expiration),
+                });
+                setSuccess(true);
+            } else {
+                setErrorMessage({ error: true, message: 'Resposta da API inválida.'});
+                throw new Error('Resposta da API inválida.');
+            }
+        } catch (error) {
+            handleError(error);
+        } finally {
+            startTransition(false);
+        }
 
-                    return setErrorMessage({
-                        error: true,
-                        message: "Alguma coisa ocorreu com a sua conexão, tente maís tarde!"
-                    })
-                }
-
-                if (error?.code == "ERR_BAD_RESPONSE") {
-                    console.log("aqui 2")
-
-                    return setErrorMessage({
-                        error: true,
-                        message: "Não conseguismos buscar a sua chave de api, tente maís tarde!"
-                    })
-                }
-
-                if (error?.code == "ECONNABORTED") {
-                    console.log("aqui 3")
-                    return setErrorMessage({
-                        error: true,
-                        message: "Alguma coisa ocorreu com a sua conexão, tente maís tarde!"
-                    })
-                }
-
-            }).finally(() => {
-                startTransition(false)
-            })
 
     }
 
